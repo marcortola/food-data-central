@@ -50,6 +50,6 @@ class Quantity implements PhysicalQuantityInterface
 
     public function getPhysicalQuantityClass(): string
     {
-        return get_class($this->physicalQuantity);
+        return \get_class($this->physicalQuantity);
     }
 }

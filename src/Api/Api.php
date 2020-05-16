@@ -4,9 +4,9 @@ namespace MarcOrtola\FoodDataCentral\Api;
 
 use MarcOrtola\FoodDataCentral\Exception\Domain\BadRequestException;
 use MarcOrtola\FoodDataCentral\Exception\Domain\DomainException;
+use MarcOrtola\FoodDataCentral\Exception\Domain\NotFoundException;
 use MarcOrtola\FoodDataCentral\Exception\Domain\TooManyRequestsException;
 use MarcOrtola\FoodDataCentral\Exception\Domain\UnauthorizedException;
-use MarcOrtola\FoodDataCentral\Exception\Domain\NotFoundException;
 use MarcOrtola\FoodDataCentral\Exception\Domain\UnknownException;
 use MarcOrtola\FoodDataCentral\Hydrator\Hydrator;
 use MarcOrtola\FoodDataCentral\Model\Collection;

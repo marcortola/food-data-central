@@ -1,0 +1,15 @@
+imports:
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/clean-code.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/psr2.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/php71.yaml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/set/php71.yaml' }
+
+services:
+    Symplify\CodingStandard\Fixer\Strict\BlankLineAfterStrictTypesFixer: ~
+    PhpCsFixer\Fixer\ArrayNotation\ArraySyntaxFixer:
+        syntax: short
+    PhpCsFixer\Fixer\FunctionNotation\MethodArgumentSpaceFixer:
+        on_multiline: 'ensure_fully_multiline'
+    PhpCsFixer\Fixer\FunctionNotation\NativeFunctionInvocationFixer:
+        scope: 'namespaced'
+        include: ['@@compiler_optimized']
