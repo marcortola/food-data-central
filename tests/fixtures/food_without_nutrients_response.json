@@ -1,0 +1,23 @@
+{
+  "foodClass": "Branded",
+  "description": "ABBA-ZABA, SNACK SIZE BITES CANDY",
+  "foodNutrients": [],
+  "foodComponents": [],
+  "foodAttributes": [],
+  "brandOwner": "Annabelle Candy Co., Inc.",
+  "gtinUpc": "070602609000",
+  "dataSource": "LI",
+  "ingredients": "CORN SYRUP, SUGAR, PEANUT FILLING [PEANUT FLOUR, NON FAT DRY MILK, PEANUT OIL AND SOY LECITHIN (AN EMULSIFIER)], VEGETABLE OIL (COCONUT, PALM KERNEL), SALT, EGG WHITES, NATURAL AND ARTIFICIAL FLAVOR.",
+  "modifiedDate": "6/22/2018",
+  "availableDate": "6/22/2018",
+  "marketCountry": "United States",
+  "servingSize": 40.00000000,
+  "servingSizeUnit": "g",
+  "householdServingFullText": "10 PIECES",
+  "labelNutrients": {},
+  "brandedFoodCategory": "Candy",
+  "fdcId": 426798,
+  "dataType": "Branded",
+  "publicationDate": "4/1/2019",
+  "foodPortions": []
+}
