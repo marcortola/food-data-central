@@ -1,7 +1,8 @@
 {
     "name": "marcortola/food-data-central",
-    "description": "Community API client for the Food Data Central USDA nutrient database",
     "type": "library",
+    "description": "Community API client for the Food Data Central USDA nutrient database",
+    "homepage": "https://github.com/marcortola/food-data-central",
     "license": "MIT",
     "authors": [
         {
@@ -9,16 +10,16 @@
             "email": "15958009+marcortola@users.noreply.github.com"
         }
     ],
-    "homepage": "https://github.com/marcortola/food-data-central",
     "require": {
         "php": "^7.4",
         "ext-json": "*",
         "php-http/discovery": "^1.7",
+        "php-units-of-measure/php-units-of-measure": "^2.1",
         "psr/http-client": "^1.0",
-        "psr/http-factory": "^1.0",
-        "php-units-of-measure/php-units-of-measure": "^2.1"
+        "psr/http-factory": "^1.0"
     },
     "require-dev": {
+        "ergebnis/composer-normalize": "^2.5",
         "phpunit/phpunit": "^9.0",
         "symplify/easy-coding-standard": "^7.3"
     },
@@ -33,14 +34,16 @@
         }
     },
     "scripts": {
-        "test": [
-            "vendor/bin/phpunit"
-        ],
         "cs": [
+            "composer normalize --dry-run --no-interaction",
             "vendor/bin/ecs check src --no-interaction"
         ],
         "cs-fix": [
+            "composer normalize --no-interaction",
             "vendor/bin/ecs check src --fix --no-interaction"
+        ],
+        "test": [
+            "vendor/bin/phpunit"
         ]
     }
 }
