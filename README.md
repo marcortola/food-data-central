@@ -16,7 +16,10 @@ $ composer require marcortola/food-data-central
 Usage
 ------------
 ```php
+$foodDataCentralClient = FoodDataCentralClient::create('your_api_key');
 
+// Find food by FDC ID.
+$foodItem = $foodDataCentralClient->food()->food(781125);
 ```
 Read the Food Data Central API documentation [here](https://fdc.nal.usda.gov/api-spec/fdc_api.html).
 
