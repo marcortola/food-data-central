@@ -7,9 +7,13 @@ use PhpUnitsOfMeasure\Exception\NonStringUnitName;
 use PhpUnitsOfMeasure\PhysicalQuantity\Energy;
 use PhpUnitsOfMeasure\PhysicalQuantityInterface;
 use PhpUnitsOfMeasure\UnitOfMeasure;
+use PhpUnitsOfMeasure\UnitOfMeasureInterface;
 
 class NutritionalEnergy extends Energy implements PhysicalQuantityInterface
 {
+    /**
+     * @var array<UnitOfMeasureInterface>
+     */
     protected static $unitDefinitions;
 
     /**

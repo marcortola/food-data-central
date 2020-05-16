@@ -45,7 +45,13 @@ class Quantity implements PhysicalQuantityInterface
 
     public function getUnit(): string
     {
-        return substr(strrchr((string) $this->physicalQuantity, ' '), 1);
+        $guessedUnit = strrchr((string) $this->physicalQuantity, ' ');
+
+        if ($guessedUnit === false) {
+            throw new \UnexpectedValueException();
+        }
+
+        return substr($guessedUnit, 1);
     }
 
     public function getPhysicalQuantityClass(): string

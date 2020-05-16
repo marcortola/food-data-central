@@ -20,6 +20,8 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.5",
+        "phpstan/phpstan": "^0.12.14",
+        "phpstan/phpstan-strict-rules": "^0.12.2",
         "phpunit/phpunit": "^9.0",
         "symplify/easy-coding-standard": "^7.3"
     },
@@ -43,6 +45,7 @@
             "vendor/bin/ecs check src --fix --no-interaction"
         ],
         "test": [
+            "vendor/bin/phpstan analyse --no-interaction",
             "vendor/bin/phpunit"
         ]
     }
