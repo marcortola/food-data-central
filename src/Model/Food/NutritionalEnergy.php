@@ -9,7 +9,7 @@ use PhpUnitsOfMeasure\PhysicalQuantityInterface;
 use PhpUnitsOfMeasure\UnitOfMeasure;
 use PhpUnitsOfMeasure\UnitOfMeasureInterface;
 
-class NutritionalEnergy extends Energy implements PhysicalQuantityInterface
+final class NutritionalEnergy extends Energy implements PhysicalQuantityInterface
 {
     /**
      * @var array<UnitOfMeasureInterface>

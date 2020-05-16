@@ -4,7 +4,7 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use PhpUnitsOfMeasure\PhysicalQuantityInterface;
 
-class Quantity implements PhysicalQuantityInterface
+final class Quantity implements PhysicalQuantityInterface
 {
     private PhysicalQuantityInterface $physicalQuantity;
 
