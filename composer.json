@@ -14,7 +14,6 @@
         "php": "^7.4",
         "ext-json": "*",
         "php-http/discovery": "^1.7",
-        "php-units-of-measure/php-units-of-measure": "^2.1",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0"
     },
