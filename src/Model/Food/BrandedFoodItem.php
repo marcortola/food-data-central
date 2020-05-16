@@ -9,7 +9,7 @@ use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 /**
  * @implements CreatableFromArray<self>
  */
-final class BrandedFoodItem implements CreatableFromArray
+final class BrandedFoodItem implements FoodItem, CreatableFromArray
 {
     private int $fdcId;
     private string $dataType;

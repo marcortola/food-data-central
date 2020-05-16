@@ -9,7 +9,7 @@ use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 /**
  * @implements CreatableFromArray<self>
  */
-final class SurveyFoodItem implements CreatableFromArray
+final class SurveyFoodItem implements FoodItem, CreatableFromArray
 {
     private int $fdcId;
     private string $description;
@@ -49,9 +49,9 @@ final class SurveyFoodItem implements CreatableFromArray
         return $this->description;
     }
 
-    public function getDataType(): ?string
+    public function getDataType(): string
     {
-        return $this->dataType;
+        return $this->dataType ?? '';
     }
 
     public function getEndDate(): ?string
