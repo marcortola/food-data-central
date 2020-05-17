@@ -4,12 +4,9 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<FoodItem>
- */
 class FoodItemFactory implements CreatableFromArray
 {
-    public static function createFromArray(array $data)
+    public static function createFromArray(array $data): FoodItem
     {
         if (isset($data['dataType'])) {
             switch ($data['dataType']) {

@@ -6,14 +6,8 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<self>
- */
-final class BrandedFoodItem implements FoodItem, CreatableFromArray
+final class BrandedFoodItem extends AbstractFoodItem implements CreatableFromArray
 {
-    private int $fdcId;
-    private string $dataType;
-    private string $description;
     private ?string $availableDate;
     private ?string $brandOwner;
     private ?string $dataSource;
@@ -27,10 +21,6 @@ final class BrandedFoodItem implements FoodItem, CreatableFromArray
     private ?string $servingSizeUnit;
     private ?string $brandedFoodCategory;
     /**
-     * @var array<FoodNutrient>
-     */
-    private array $foodNutrients = [];
-    /**
      * @var array<FoodUpdateLog>
      */
     private array $foodUpdateLog = [];
@@ -38,28 +28,6 @@ final class BrandedFoodItem implements FoodItem, CreatableFromArray
      * @var array<LabelNutrient>
      */
     private array $labelNutrients = [];
-
-    private function __construct(int $fdcId, string $dataType, string $description)
-    {
-        $this->fdcId = $fdcId;
-        $this->dataType = $dataType;
-        $this->description = $description;
-    }
-
-    public function getFdcId(): int
-    {
-        return $this->fdcId;
-    }
-
-    public function getDataType(): string
-    {
-        return $this->dataType;
-    }
-
-    public function getDescription(): string
-    {
-        return $this->description;
-    }
 
     public function getAvailableDate(): ?string
     {
@@ -122,14 +90,6 @@ final class BrandedFoodItem implements FoodItem, CreatableFromArray
     }
 
     /**
-     * @return array<FoodNutrient>
-     */
-    public function getFoodNutrients(): array
-    {
-        return $this->foodNutrients;
-    }
-
-    /**
      * @return array<FoodUpdateLog>
      */
     public function getFoodUpdateLog(): array
@@ -147,11 +107,7 @@ final class BrandedFoodItem implements FoodItem, CreatableFromArray
 
     public static function createFromArray(array $data): self
     {
-        if (!isset($data['fdcId'], $data['dataType'], $data['description'])) {
-            throw new \InvalidArgumentException();
-        }
-
-        $self = new self($data['fdcId'], $data['dataType'], $data['description']);
+        $self = parent::createFromArray($data);
 
         $self->publicationDate = $data['publicationDate'] ?? null;
         $self->brandOwner = $data['brandOwner'] ?? null;
@@ -165,12 +121,6 @@ final class BrandedFoodItem implements FoodItem, CreatableFromArray
         $self->servingSize = $data['servingSize'] ?? null;
         $self->servingSizeUnit = $data['servingSizeUnit'] ?? null;
         $self->brandedFoodCategory = $data['brandedFoodCategory'] ?? null;
-
-        if (isset($data['foodNutrients']) && \is_array($data['foodNutrients'])) {
-            foreach ($data['foodNutrients'] as $foodNutrientData) {
-                $self->foodNutrients[] = FoodNutrient::createFromArray($foodNutrientData);
-            }
-        }
 
         if (isset($data['foodUpdateLog']) && \is_array($data['foodUpdateLog'])) {
             foreach ($data['foodUpdateLog'] as $foodUpdateLogData) {

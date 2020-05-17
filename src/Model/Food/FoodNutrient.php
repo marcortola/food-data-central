@@ -6,9 +6,6 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<self>
- */
 final class FoodNutrient implements CreatableFromArray
 {
     private int $id;
@@ -105,5 +102,10 @@ final class FoodNutrient implements CreatableFromArray
             : null;
 
         return $self;
+    }
+
+    public function isNutrient(int $id): bool
+    {
+        return $this->nutrient !== null && $this->nutrient->getId() !== null && $this->nutrient->getId() === $id;
     }
 }

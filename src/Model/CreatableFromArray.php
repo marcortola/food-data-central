@@ -2,14 +2,11 @@
 
 namespace MarcOrtola\FoodDataCentral\Model;
 
-/**
- * @template T
- */
 interface CreatableFromArray
 {
     /**
      * @param mixed[] $data
-     * @return T
+     * @return mixed
      */
     public static function createFromArray(array $data);
 }

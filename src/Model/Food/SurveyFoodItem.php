@@ -6,14 +6,8 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<self>
- */
-final class SurveyFoodItem implements FoodItem, CreatableFromArray
+final class SurveyFoodItem extends AbstractFoodItem implements CreatableFromArray
 {
-    private int $fdcId;
-    private string $description;
-    private ?string $dataType;
     private ?string $endDate;
     private ?string $foodClass;
     private ?string $foodCode;
@@ -32,27 +26,6 @@ final class SurveyFoodItem implements FoodItem, CreatableFromArray
      * @var array<InputFoodFoundation>
      */
     private array $inputFoods = [];
-
-    private function __construct(int $fdcId, string $description)
-    {
-        $this->fdcId = $fdcId;
-        $this->description = $description;
-    }
-
-    public function getFdcId(): int
-    {
-        return $this->fdcId;
-    }
-
-    public function getDescription(): string
-    {
-        return $this->description;
-    }
-
-    public function getDataType(): string
-    {
-        return $this->dataType ?? '';
-    }
 
     public function getEndDate(): ?string
     {
@@ -110,13 +83,8 @@ final class SurveyFoodItem implements FoodItem, CreatableFromArray
 
     public static function createFromArray(array $data): self
     {
-        if (!isset($data['fdcId'], $data['description'])) {
-            throw new \InvalidArgumentException();
-        }
+        $self = parent::createFromArray($data);
 
-        $self = new self($data['fdcId'], $data['description']);
-
-        $self->dataType = $data['dataType'] ?? null;
         $self->endDate = $data['endDate'] ?? null;
         $self->foodClass = $data['foodClass'] ?? null;
         $self->foodCode = $data['foodCode'] ?? null;

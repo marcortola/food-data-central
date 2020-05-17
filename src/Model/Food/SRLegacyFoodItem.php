@@ -6,14 +6,8 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<self>
- */
-final class SRLegacyFoodItem implements FoodItem, CreatableFromArray
+final class SRLegacyFoodItem extends AbstractFoodItem implements CreatableFromArray
 {
-    private int $fdcId;
-    private string $dataType;
-    private string $description;
     private ?string $foodClass;
     private ?bool $isHistoricalReference;
     private ?string $ndbNumber;
@@ -21,35 +15,9 @@ final class SRLegacyFoodItem implements FoodItem, CreatableFromArray
     private ?string $scientificName;
     private ?FoodCategory $foodCategory;
     /**
-     * @var array<FoodNutrient>
-     */
-    private array $foodNutrients = [];
-    /**
      * @var array<NutrientConversionFactors>
      */
     private array $nutrientConversionFactors = [];
-
-    private function __construct(int $fdcId, string $dataType, string $description)
-    {
-        $this->fdcId = $fdcId;
-        $this->dataType = $dataType;
-        $this->description = $description;
-    }
-
-    public function getFdcId(): int
-    {
-        return $this->fdcId;
-    }
-
-    public function getDataType(): string
-    {
-        return $this->dataType;
-    }
-
-    public function getDescription(): string
-    {
-        return $this->description;
-    }
 
     public function getFoodClass(): ?string
     {
@@ -82,14 +50,6 @@ final class SRLegacyFoodItem implements FoodItem, CreatableFromArray
     }
 
     /**
-     * @return array<FoodNutrient>
-     */
-    public function getFoodNutrients(): array
-    {
-        return $this->foodNutrients;
-    }
-
-    /**
      * @return array<NutrientConversionFactors>
      */
     public function getNutrientConversionFactors(): array
@@ -99,11 +59,7 @@ final class SRLegacyFoodItem implements FoodItem, CreatableFromArray
 
     public static function createFromArray(array $data): self
     {
-        if (!isset($data['fdcId'], $data['dataType'], $data['description'])) {
-            throw new \InvalidArgumentException();
-        }
-
-        $self = new self($data['fdcId'], $data['dataType'], $data['description']);
+        $self = parent::createFromArray($data);
 
         $self->publicationDate = $data['publicationDate'] ?? null;
         $self->foodClass = $data['foodClass'] ?? null;
@@ -114,12 +70,6 @@ final class SRLegacyFoodItem implements FoodItem, CreatableFromArray
         $self->foodCategory = isset($data['foodCategory'])
             ? FoodCategory::createFromArray($data['foodCategory'])
             : null;
-
-        if (isset($data['foodNutrients']) && \is_array($data['foodNutrients'])) {
-            foreach ($data['foodNutrients'] as $foodNutrientData) {
-                $self->foodNutrients[] = FoodNutrient::createFromArray($foodNutrientData);
-            }
-        }
 
         if (isset($data['nutrientConversionFactors']) && \is_array($data['nutrientConversionFactors'])) {
             foreach ($data['nutrientConversionFactors'] as $nutrientConvFactors) {

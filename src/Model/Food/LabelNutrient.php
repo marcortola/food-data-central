@@ -6,9 +6,6 @@ namespace MarcOrtola\FoodDataCentral\Model\Food;
 
 use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
-/**
- * @implements CreatableFromArray<self>
- */
 final class LabelNutrient implements CreatableFromArray
 {
     private ?float $value;
