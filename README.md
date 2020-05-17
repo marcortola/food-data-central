@@ -20,6 +20,10 @@ $foodDataCentralClient = FoodDataCentralClient::create('your_api_key');
 
 // Find food by FDC ID.
 $foodItem = $foodDataCentralClient->food()->food(781125);
+
+// Find food nutrients. See the FoodItem interface for more nutrient finders.
+$calcium = $foodDataCentralClient->food()->food(781125)->getCalcium();
+
 ```
 Read the Food Data Central API documentation [here](https://fdc.nal.usda.gov/api-spec/fdc_api.html).
 
