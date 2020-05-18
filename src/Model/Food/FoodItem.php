@@ -12,177 +12,177 @@ interface FoodItem
 
     public function getDescription(): string;
 
-    public function getAlanine(): ?Nutrient;
+    public function getAlanine(): ?FoodNutrient;
 
-    public function getAlcohol(): ?Nutrient;
+    public function getAlcohol(): ?FoodNutrient;
 
-    public function getArginine(): ?Nutrient;
+    public function getArginine(): ?FoodNutrient;
 
-    public function getAsh(): ?Nutrient;
+    public function getAsh(): ?FoodNutrient;
 
-    public function getAsparticAcid(): ?Nutrient;
+    public function getAsparticAcid(): ?FoodNutrient;
 
-    public function getBetaSitosterol(): ?Nutrient;
+    public function getBetaSitosterol(): ?FoodNutrient;
 
-    public function getBetaine(): ?Nutrient;
+    public function getBetaine(): ?FoodNutrient;
 
-    public function getCaffeine(): ?Nutrient;
+    public function getCaffeine(): ?FoodNutrient;
 
-    public function getCalcium(): ?Nutrient;
+    public function getCalcium(): ?FoodNutrient;
 
-    public function getCampesterol(): ?Nutrient;
+    public function getCampesterol(): ?FoodNutrient;
 
-    public function getCarbohydrate(): ?Nutrient;
+    public function getCarbohydrate(): ?FoodNutrient;
 
-    public function getAlphaCarotene(): ?Nutrient;
+    public function getAlphaCarotene(): ?FoodNutrient;
 
-    public function getBetaCarotene(): ?Nutrient;
+    public function getBetaCarotene(): ?FoodNutrient;
 
-    public function getCholesterol(): ?Nutrient;
+    public function getCholesterol(): ?FoodNutrient;
 
-    public function getCholine(): ?Nutrient;
+    public function getCholine(): ?FoodNutrient;
 
-    public function getCopper(): ?Nutrient;
+    public function getCopper(): ?FoodNutrient;
 
-    public function getCryptoxanthin(): ?Nutrient;
+    public function getCryptoxanthin(): ?FoodNutrient;
 
-    public function getCystine(): ?Nutrient;
+    public function getCystine(): ?FoodNutrient;
 
-    public function getEnergy(): ?Nutrient;
+    public function getEnergy(): ?FoodNutrient;
 
-    public function getMonounsaturatedFat(): ?Nutrient;
+    public function getMonounsaturatedFat(): ?FoodNutrient;
 
-    public function getPolyunsaturatedFat(): ?Nutrient;
+    public function getPolyunsaturatedFat(): ?FoodNutrient;
 
-    public function getSaturatedFat(): ?Nutrient;
+    public function getSaturatedFat(): ?FoodNutrient;
 
-    public function getTransFat(): ?Nutrient;
+    public function getTransFat(): ?FoodNutrient;
 
-    public function getFiber(): ?Nutrient;
+    public function getFiber(): ?FoodNutrient;
 
-    public function getFluoride(): ?Nutrient;
+    public function getFluoride(): ?FoodNutrient;
 
-    public function getFolate(): ?Nutrient;
+    public function getFolate(): ?FoodNutrient;
 
-    public function getFolicAcid(): ?Nutrient;
+    public function getFolicAcid(): ?FoodNutrient;
 
-    public function getFructose(): ?Nutrient;
+    public function getFructose(): ?FoodNutrient;
 
-    public function getGalactose(): ?Nutrient;
+    public function getGalactose(): ?FoodNutrient;
 
-    public function getGlucose(): ?Nutrient;
+    public function getGlucose(): ?FoodNutrient;
 
-    public function getGlutamicAcid(): ?Nutrient;
+    public function getGlutamicAcid(): ?FoodNutrient;
 
-    public function getGlycine(): ?Nutrient;
+    public function getGlycine(): ?FoodNutrient;
 
-    public function getHistidine(): ?Nutrient;
+    public function getHistidine(): ?FoodNutrient;
 
-    public function getHydroxyproline(): ?Nutrient;
+    public function getHydroxyproline(): ?FoodNutrient;
 
-    public function getIron(): ?Nutrient;
+    public function getIron(): ?FoodNutrient;
 
-    public function getIsoleucine(): ?Nutrient;
+    public function getIsoleucine(): ?FoodNutrient;
 
-    public function getLactose(): ?Nutrient;
+    public function getLactose(): ?FoodNutrient;
 
-    public function getLeucine(): ?Nutrient;
+    public function getLeucine(): ?FoodNutrient;
 
-    public function getLuteinPlusZeaxanthin(): ?Nutrient;
+    public function getLuteinPlusZeaxanthin(): ?FoodNutrient;
 
-    public function getLycopene(): ?Nutrient;
+    public function getLycopene(): ?FoodNutrient;
 
-    public function getLysine(): ?Nutrient;
+    public function getLysine(): ?FoodNutrient;
 
-    public function getMagnesium(): ?Nutrient;
+    public function getMagnesium(): ?FoodNutrient;
 
-    public function getMaltose(): ?Nutrient;
+    public function getMaltose(): ?FoodNutrient;
 
-    public function getManganese(): ?Nutrient;
+    public function getManganese(): ?FoodNutrient;
 
-    public function getMethionine(): ?Nutrient;
+    public function getMethionine(): ?FoodNutrient;
 
-    public function getNiacin(): ?Nutrient;
+    public function getNiacin(): ?FoodNutrient;
 
-    public function getPantothenicAcid(): ?Nutrient;
+    public function getPantothenicAcid(): ?FoodNutrient;
 
-    public function getPhenylalanine(): ?Nutrient;
+    public function getPhenylalanine(): ?FoodNutrient;
 
-    public function getPhosphorus(): ?Nutrient;
+    public function getPhosphorus(): ?FoodNutrient;
 
-    public function getPhytosterols(): ?Nutrient;
+    public function getPhytosterols(): ?FoodNutrient;
 
-    public function getPotassium(): ?Nutrient;
+    public function getPotassium(): ?FoodNutrient;
 
-    public function getProline(): ?Nutrient;
+    public function getProline(): ?FoodNutrient;
 
-    public function getProtein(): ?Nutrient;
+    public function getProtein(): ?FoodNutrient;
 
-    public function getRetinol(): ?Nutrient;
+    public function getRetinol(): ?FoodNutrient;
 
-    public function getRiboflavin(): ?Nutrient;
+    public function getRiboflavin(): ?FoodNutrient;
 
-    public function getSelenium(): ?Nutrient;
+    public function getSelenium(): ?FoodNutrient;
 
-    public function getSerine(): ?Nutrient;
+    public function getSerine(): ?FoodNutrient;
 
-    public function getSodium(): ?Nutrient;
+    public function getSodium(): ?FoodNutrient;
 
-    public function getStarch(): ?Nutrient;
+    public function getStarch(): ?FoodNutrient;
 
-    public function getStigmasterol(): ?Nutrient;
+    public function getStigmasterol(): ?FoodNutrient;
 
-    public function getSucrose(): ?Nutrient;
+    public function getSucrose(): ?FoodNutrient;
 
-    public function getSugars(): ?Nutrient;
+    public function getSugars(): ?FoodNutrient;
 
-    public function getTheobromine(): ?Nutrient;
+    public function getTheobromine(): ?FoodNutrient;
 
-    public function getThiamin(): ?Nutrient;
+    public function getThiamin(): ?FoodNutrient;
 
-    public function getThreonine(): ?Nutrient;
+    public function getThreonine(): ?FoodNutrient;
 
-    public function getBetaTocopherol(): ?Nutrient;
+    public function getBetaTocopherol(): ?FoodNutrient;
 
-    public function getDeltaTocopherol(): ?Nutrient;
+    public function getDeltaTocopherol(): ?FoodNutrient;
 
-    public function getGammaTocopherol(): ?Nutrient;
+    public function getGammaTocopherol(): ?FoodNutrient;
 
-    public function getAlphaTocotrienol(): ?Nutrient;
+    public function getAlphaTocotrienol(): ?FoodNutrient;
 
-    public function getBetaTocotrienol(): ?Nutrient;
+    public function getBetaTocotrienol(): ?FoodNutrient;
 
-    public function getDeltaTocotrienol(): ?Nutrient;
+    public function getDeltaTocotrienol(): ?FoodNutrient;
 
-    public function getGammaTocotrienol(): ?Nutrient;
+    public function getGammaTocotrienol(): ?FoodNutrient;
 
-    public function getFat(): ?Nutrient;
+    public function getFat(): ?FoodNutrient;
 
-    public function getTryptophan(): ?Nutrient;
+    public function getTryptophan(): ?FoodNutrient;
 
-    public function getTyrosine(): ?Nutrient;
+    public function getTyrosine(): ?FoodNutrient;
 
-    public function getValine(): ?Nutrient;
+    public function getValine(): ?FoodNutrient;
 
-    public function getVitaminA(): ?Nutrient;
+    public function getVitaminA(): ?FoodNutrient;
 
-    public function getVitaminB12(): ?Nutrient;
+    public function getVitaminB12(): ?FoodNutrient;
 
-    public function getVitaminB6(): ?Nutrient;
+    public function getVitaminB6(): ?FoodNutrient;
 
-    public function getVitaminC(): ?Nutrient;
+    public function getVitaminC(): ?FoodNutrient;
 
-    public function getVitaminD(): ?Nutrient;
+    public function getVitaminD(): ?FoodNutrient;
 
-    public function getVitaminD2(): ?Nutrient;
+    public function getVitaminD2(): ?FoodNutrient;
 
-    public function getVitaminD3(): ?Nutrient;
+    public function getVitaminD3(): ?FoodNutrient;
 
-    public function getVitaminE(): ?Nutrient;
+    public function getVitaminE(): ?FoodNutrient;
 
-    public function getVitaminK(): ?Nutrient;
+    public function getVitaminK(): ?FoodNutrient;
 
-    public function getWater(): ?Nutrient;
+    public function getWater(): ?FoodNutrient;
 
-    public function getZinc(): ?Nutrient;
+    public function getZinc(): ?FoodNutrient;
 }
