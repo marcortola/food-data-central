@@ -104,8 +104,10 @@ final class FoodNutrient implements CreatableFromArray
         return $self;
     }
 
-    public function isNutrient(int $id): bool
+    public function isNutrient(int $number): bool
     {
-        return $this->nutrient !== null && $this->nutrient->getId() !== null && $this->nutrient->getId() === $id;
+        return $this->nutrient !== null
+            && $this->nutrient->getNumber() !== null
+            && $this->nutrient->getNumber() === (string) $number;
     }
 }

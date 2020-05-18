@@ -64,446 +64,447 @@ abstract class AbstractFoodItem implements FoodItem, CreatableFromArray
         return $self;
     }
 
-    public function getAlanine(): ?Nutrient
+    public function getAlanine(): ?FoodNutrient
     {
-        return $this->getNutrient(513);
+        return $this->getFoodNutrient(513);
     }
 
-    public function getAlcohol(): ?Nutrient
+    public function getAlcohol(): ?FoodNutrient
     {
-        return $this->getNutrient(221);
+        return $this->getFoodNutrient(221);
     }
 
-    public function getArginine(): ?Nutrient
+    public function getArginine(): ?FoodNutrient
     {
-        return $this->getNutrient(511);
+        return $this->getFoodNutrient(511);
     }
 
-    public function getAsh(): ?Nutrient
+    public function getAsh(): ?FoodNutrient
     {
-        return $this->getNutrient(207);
+        return $this->getFoodNutrient(207);
     }
 
-    public function getAsparticAcid(): ?Nutrient
+    public function getAsparticAcid(): ?FoodNutrient
     {
-        return $this->getNutrient(514);
+        return $this->getFoodNutrient(514);
     }
 
-    public function getBetaSitosterol(): ?Nutrient
+    public function getBetaSitosterol(): ?FoodNutrient
     {
-        return $this->getNutrient(641);
+        return $this->getFoodNutrient(641);
     }
 
-    public function getBetaine(): ?Nutrient
+    public function getBetaine(): ?FoodNutrient
     {
-        return $this->getNutrient(454);
+        return $this->getFoodNutrient(454);
     }
 
-    public function getCaffeine(): ?Nutrient
+    public function getCaffeine(): ?FoodNutrient
     {
-        return $this->getNutrient(262);
+        return $this->getFoodNutrient(262);
     }
 
-    public function getCalcium(): ?Nutrient
+    public function getCalcium(): ?FoodNutrient
     {
-        return $this->getNutrient(301);
+        return $this->getFoodNutrient(301);
     }
 
-    public function getCampesterol(): ?Nutrient
+    public function getCampesterol(): ?FoodNutrient
     {
-        return $this->getNutrient(639);
+        return $this->getFoodNutrient(639);
     }
 
-    public function getCarbohydrate(): ?Nutrient
+    public function getCarbohydrate(): ?FoodNutrient
     {
-        return $this->getNutrient(205);
+        return $this->getFoodNutrient(205);
     }
 
-    public function getAlphaCarotene(): ?Nutrient
+    public function getAlphaCarotene(): ?FoodNutrient
     {
-        return $this->getNutrient(322);
+        return $this->getFoodNutrient(322);
     }
 
-    public function getBetaCarotene(): ?Nutrient
+    public function getBetaCarotene(): ?FoodNutrient
     {
-        return $this->getNutrient(321);
+        return $this->getFoodNutrient(321);
     }
 
-    public function getCholesterol(): ?Nutrient
+    public function getCholesterol(): ?FoodNutrient
     {
-        return $this->getNutrient(601);
+        return $this->getFoodNutrient(601);
     }
 
-    public function getCholine(): ?Nutrient
+    public function getCholine(): ?FoodNutrient
     {
-        return $this->getNutrient(421);
+        return $this->getFoodNutrient(421);
     }
 
-    public function getCopper(): ?Nutrient
+    public function getCopper(): ?FoodNutrient
     {
-        return $this->getNutrient(312);
+        return $this->getFoodNutrient(312);
     }
 
-    public function getCryptoxanthin(): ?Nutrient
+    public function getCryptoxanthin(): ?FoodNutrient
     {
-        return $this->getNutrient(334);
+        return $this->getFoodNutrient(334);
     }
 
-    public function getCystine(): ?Nutrient
+    public function getCystine(): ?FoodNutrient
     {
-        return $this->getNutrient(507);
+        return $this->getFoodNutrient(507);
     }
 
-    public function getEnergy(): ?Nutrient
+    public function getEnergy(): ?FoodNutrient
     {
-        return $this->getNutrient(208);
+        return $this->getFoodNutrient(208);
     }
 
-    public function getMonounsaturatedFat(): ?Nutrient
+    public function getMonounsaturatedFat(): ?FoodNutrient
     {
-        return $this->getNutrient(645);
+        return $this->getFoodNutrient(645);
     }
 
-    public function getPolyunsaturatedFat(): ?Nutrient
+    public function getPolyunsaturatedFat(): ?FoodNutrient
     {
-        return $this->getNutrient(646);
+        return $this->getFoodNutrient(646);
     }
 
-    public function getSaturatedFat(): ?Nutrient
+    public function getSaturatedFat(): ?FoodNutrient
     {
-        return $this->getNutrient(606);
+        return $this->getFoodNutrient(606);
     }
 
-    public function getTransFat(): ?Nutrient
+    public function getTransFat(): ?FoodNutrient
     {
-        return $this->getNutrient(605);
+        return $this->getFoodNutrient(605);
     }
 
-    public function getFiber(): ?Nutrient
+    public function getFiber(): ?FoodNutrient
     {
-        return $this->getNutrient(291);
+        return $this->getFoodNutrient(291);
     }
 
-    public function getFluoride(): ?Nutrient
+    public function getFluoride(): ?FoodNutrient
     {
-        return $this->getNutrient(313);
+        return $this->getFoodNutrient(313);
     }
 
-    public function getFolate(): ?Nutrient
+    public function getFolate(): ?FoodNutrient
     {
-        return $this->getNutrient(417);
+        return $this->getFoodNutrient(417);
     }
 
-    public function getFolicAcid(): ?Nutrient
+    public function getFolicAcid(): ?FoodNutrient
     {
-        return $this->getNutrient(431);
+        return $this->getFoodNutrient(431);
     }
 
-    public function getFructose(): ?Nutrient
+    public function getFructose(): ?FoodNutrient
     {
-        return $this->getNutrient(212);
+        return $this->getFoodNutrient(212);
     }
 
-    public function getGalactose(): ?Nutrient
+    public function getGalactose(): ?FoodNutrient
     {
-        return $this->getNutrient(287);
+        return $this->getFoodNutrient(287);
     }
 
-    public function getGlucose(): ?Nutrient
+    public function getGlucose(): ?FoodNutrient
     {
-        return $this->getNutrient(211);
+        return $this->getFoodNutrient(211);
     }
 
-    public function getGlutamicAcid(): ?Nutrient
+    public function getGlutamicAcid(): ?FoodNutrient
     {
-        return $this->getNutrient(515);
+        return $this->getFoodNutrient(515);
     }
 
-    public function getGlycine(): ?Nutrient
+    public function getGlycine(): ?FoodNutrient
     {
-        return $this->getNutrient(516);
+        return $this->getFoodNutrient(516);
     }
 
-    public function getHistidine(): ?Nutrient
+    public function getHistidine(): ?FoodNutrient
     {
-        return $this->getNutrient(512);
+        return $this->getFoodNutrient(512);
     }
 
-    public function getHydroxyproline(): ?Nutrient
+    public function getHydroxyproline(): ?FoodNutrient
     {
-        return $this->getNutrient(521);
+        return $this->getFoodNutrient(521);
     }
 
-    public function getIron(): ?Nutrient
+    public function getIron(): ?FoodNutrient
     {
-        return $this->getNutrient(303);
+        return $this->getFoodNutrient(303);
     }
 
-    public function getIsoleucine(): ?Nutrient
+    public function getIsoleucine(): ?FoodNutrient
     {
-        return $this->getNutrient(503);
+        return $this->getFoodNutrient(503);
     }
 
-    public function getLactose(): ?Nutrient
+    public function getLactose(): ?FoodNutrient
     {
-        return $this->getNutrient(213);
+        return $this->getFoodNutrient(213);
     }
 
-    public function getLeucine(): ?Nutrient
+    public function getLeucine(): ?FoodNutrient
     {
-        return $this->getNutrient(504);
+        return $this->getFoodNutrient(504);
     }
 
-    public function getLuteinPlusZeaxanthin(): ?Nutrient
+    public function getLuteinPlusZeaxanthin(): ?FoodNutrient
     {
-        return $this->getNutrient(338);
+        return $this->getFoodNutrient(338);
     }
 
-    public function getLycopene(): ?Nutrient
+    public function getLycopene(): ?FoodNutrient
     {
-        return $this->getNutrient(337);
+        return $this->getFoodNutrient(337);
     }
 
-    public function getLysine(): ?Nutrient
+    public function getLysine(): ?FoodNutrient
     {
-        return $this->getNutrient(505);
+        return $this->getFoodNutrient(505);
     }
 
-    public function getMagnesium(): ?Nutrient
+    public function getMagnesium(): ?FoodNutrient
     {
-        return $this->getNutrient(304);
+        return $this->getFoodNutrient(304);
     }
 
-    public function getMaltose(): ?Nutrient
+    public function getMaltose(): ?FoodNutrient
     {
-        return $this->getNutrient(214);
+        return $this->getFoodNutrient(214);
     }
 
-    public function getManganese(): ?Nutrient
+    public function getManganese(): ?FoodNutrient
     {
-        return $this->getNutrient(315);
+        return $this->getFoodNutrient(315);
     }
 
-    public function getMethionine(): ?Nutrient
+    public function getMethionine(): ?FoodNutrient
     {
-        return $this->getNutrient(506);
+        return $this->getFoodNutrient(506);
     }
 
-    public function getNiacin(): ?Nutrient
+    public function getNiacin(): ?FoodNutrient
     {
-        return $this->getNutrient(406);
+        return $this->getFoodNutrient(406);
     }
 
-    public function getPantothenicAcid(): ?Nutrient
+    public function getPantothenicAcid(): ?FoodNutrient
     {
-        return $this->getNutrient(410);
+        return $this->getFoodNutrient(410);
     }
 
-    public function getPhenylalanine(): ?Nutrient
+    public function getPhenylalanine(): ?FoodNutrient
     {
-        return $this->getNutrient(508);
+        return $this->getFoodNutrient(508);
     }
 
-    public function getPhosphorus(): ?Nutrient
+    public function getPhosphorus(): ?FoodNutrient
     {
-        return $this->getNutrient(305);
+        return $this->getFoodNutrient(305);
     }
 
-    public function getPhytosterols(): ?Nutrient
+    public function getPhytosterols(): ?FoodNutrient
     {
-        return $this->getNutrient(636);
+        return $this->getFoodNutrient(636);
     }
 
-    public function getPotassium(): ?Nutrient
+    public function getPotassium(): ?FoodNutrient
     {
-        return $this->getNutrient(306);
+        return $this->getFoodNutrient(306);
     }
 
-    public function getProline(): ?Nutrient
+    public function getProline(): ?FoodNutrient
     {
-        return $this->getNutrient(517);
+        return $this->getFoodNutrient(517);
     }
 
-    public function getProtein(): ?Nutrient
+    public function getProtein(): ?FoodNutrient
     {
-        return $this->getNutrient(203);
+        return $this->getFoodNutrient(203);
     }
 
-    public function getRetinol(): ?Nutrient
+    public function getRetinol(): ?FoodNutrient
     {
-        return $this->getNutrient(319);
+        return $this->getFoodNutrient(319);
     }
 
-    public function getRiboflavin(): ?Nutrient
+    public function getRiboflavin(): ?FoodNutrient
     {
-        return $this->getNutrient(405);
+        return $this->getFoodNutrient(405);
     }
 
-    public function getSelenium(): ?Nutrient
+    public function getSelenium(): ?FoodNutrient
     {
-        return $this->getNutrient(317);
+        return $this->getFoodNutrient(317);
     }
 
-    public function getSerine(): ?Nutrient
+    public function getSerine(): ?FoodNutrient
     {
-        return $this->getNutrient(518);
+        return $this->getFoodNutrient(518);
     }
 
-    public function getSodium(): ?Nutrient
+    public function getSodium(): ?FoodNutrient
     {
-        return $this->getNutrient(307);
+        return $this->getFoodNutrient(307);
     }
 
-    public function getStarch(): ?Nutrient
+    public function getStarch(): ?FoodNutrient
     {
-        return $this->getNutrient(209);
+        return $this->getFoodNutrient(209);
     }
 
-    public function getStigmasterol(): ?Nutrient
+    public function getStigmasterol(): ?FoodNutrient
     {
-        return $this->getNutrient(638);
+        return $this->getFoodNutrient(638);
     }
 
-    public function getSucrose(): ?Nutrient
+    public function getSucrose(): ?FoodNutrient
     {
-        return $this->getNutrient(210);
+        return $this->getFoodNutrient(210);
     }
 
-    public function getSugars(): ?Nutrient
+    public function getSugars(): ?FoodNutrient
     {
-        return $this->getNutrient(269);
+        return $this->getFoodNutrient(269);
     }
 
-    public function getTheobromine(): ?Nutrient
+    public function getTheobromine(): ?FoodNutrient
     {
-        return $this->getNutrient(263);
+        return $this->getFoodNutrient(263);
     }
 
-    public function getThiamin(): ?Nutrient
+    public function getThiamin(): ?FoodNutrient
     {
-        return $this->getNutrient(404);
+        return $this->getFoodNutrient(404);
     }
 
-    public function getThreonine(): ?Nutrient
+    public function getThreonine(): ?FoodNutrient
     {
-        return $this->getNutrient(502);
+        return $this->getFoodNutrient(502);
     }
 
-    public function getBetaTocopherol(): ?Nutrient
+    public function getBetaTocopherol(): ?FoodNutrient
     {
-        return $this->getNutrient(341);
+        return $this->getFoodNutrient(341);
     }
 
-    public function getDeltaTocopherol(): ?Nutrient
+    public function getDeltaTocopherol(): ?FoodNutrient
     {
-        return $this->getNutrient(343);
+        return $this->getFoodNutrient(343);
     }
 
-    public function getGammaTocopherol(): ?Nutrient
+    public function getGammaTocopherol(): ?FoodNutrient
     {
-        return $this->getNutrient(342);
+        return $this->getFoodNutrient(342);
     }
 
-    public function getAlphaTocotrienol(): ?Nutrient
+    public function getAlphaTocotrienol(): ?FoodNutrient
     {
-        return $this->getNutrient(344);
+        return $this->getFoodNutrient(344);
     }
 
-    public function getBetaTocotrienol(): ?Nutrient
+    public function getBetaTocotrienol(): ?FoodNutrient
     {
-        return $this->getNutrient(345);
+        return $this->getFoodNutrient(345);
     }
 
-    public function getDeltaTocotrienol(): ?Nutrient
+    public function getDeltaTocotrienol(): ?FoodNutrient
     {
-        return $this->getNutrient(347);
+        return $this->getFoodNutrient(347);
     }
 
-    public function getGammaTocotrienol(): ?Nutrient
+    public function getGammaTocotrienol(): ?FoodNutrient
     {
-        return $this->getNutrient(346);
+        return $this->getFoodNutrient(346);
     }
 
-    public function getFat(): ?Nutrient
+    public function getFat(): ?FoodNutrient
     {
-        return $this->getNutrient(204);
+        return $this->getFoodNutrient(204);
     }
 
-    public function getTryptophan(): ?Nutrient
+    public function getTryptophan(): ?FoodNutrient
     {
-        return $this->getNutrient(501);
+        return $this->getFoodNutrient(501);
     }
 
-    public function getTyrosine(): ?Nutrient
+    public function getTyrosine(): ?FoodNutrient
     {
-        return $this->getNutrient(509);
+        return $this->getFoodNutrient(509);
     }
 
-    public function getValine(): ?Nutrient
+    public function getValine(): ?FoodNutrient
     {
-        return $this->getNutrient(510);
+        return $this->getFoodNutrient(510);
     }
 
-    public function getVitaminA(): ?Nutrient
+    public function getVitaminA(): ?FoodNutrient
     {
-        return $this->getNutrient(320);
+        return $this->getFoodNutrient(320);
     }
 
-    public function getVitaminB12(): ?Nutrient
+    public function getVitaminB12(): ?FoodNutrient
     {
-        return $this->getNutrient(418);
+        return $this->getFoodNutrient(418);
     }
 
-    public function getVitaminB6(): ?Nutrient
+    public function getVitaminB6(): ?FoodNutrient
     {
-        return $this->getNutrient(415);
+        return $this->getFoodNutrient(415);
     }
 
-    public function getVitaminC(): ?Nutrient
+    public function getVitaminC(): ?FoodNutrient
     {
-        return $this->getNutrient(401);
+        return $this->getFoodNutrient(401);
     }
 
-    public function getVitaminD(): ?Nutrient
+    public function getVitaminD(): ?FoodNutrient
     {
-        return $this->getNutrient(328);
+        return $this->getFoodNutrient(328);
     }
 
-    public function getVitaminD2(): ?Nutrient
+    public function getVitaminD2(): ?FoodNutrient
     {
-        return $this->getNutrient(325);
+        return $this->getFoodNutrient(325);
     }
 
-    public function getVitaminD3(): ?Nutrient
+    public function getVitaminD3(): ?FoodNutrient
     {
-        return $this->getNutrient(326);
+        return $this->getFoodNutrient(326);
     }
 
-    public function getVitaminE(): ?Nutrient
+    public function getVitaminE(): ?FoodNutrient
     {
-        return $this->getNutrient(323);
+        return $this->getFoodNutrient(323);
     }
 
-    public function getVitaminK(): ?Nutrient
+    public function getVitaminK(): ?FoodNutrient
     {
-        return $this->getNutrient(430);
+        return $this->getFoodNutrient(430);
     }
 
-    public function getWater(): ?Nutrient
+    public function getWater(): ?FoodNutrient
     {
-        return $this->getNutrient(255);
+        return $this->getFoodNutrient(255);
     }
 
-    public function getZinc(): ?Nutrient
+    public function getZinc(): ?FoodNutrient
     {
-        return $this->getNutrient(309);
+        return $this->getFoodNutrient(309);
     }
 
-    private function getNutrient(int $id): ?Nutrient
+    private function getFoodNutrient(int $number): ?FoodNutrient
     {
+        /** @var FoodNutrient $foodNutrient */
         foreach ($this->getFoodNutrients() as $foodNutrient) {
-            if ($foodNutrient->isNutrient($id)) {
-                return $foodNutrient->getNutrient();
+            if ($foodNutrient->isNutrient($number)) {
+                return $foodNutrient;
             }
         }
 
