@@ -10,7 +10,7 @@ final class SRLegacyFoodItem extends AbstractFoodItem implements CreatableFromAr
 {
     private ?string $foodClass;
     private ?bool $isHistoricalReference;
-    private ?string $ndbNumber;
+    private ?int $ndbNumber;
     private ?string $publicationDate;
     private ?string $scientificName;
     private ?FoodCategory $foodCategory;
@@ -29,7 +29,7 @@ final class SRLegacyFoodItem extends AbstractFoodItem implements CreatableFromAr
         return $this->isHistoricalReference;
     }
 
-    public function getNdbNumber(): ?string
+    public function getNdbNumber(): ?int
     {
         return $this->ndbNumber;
     }

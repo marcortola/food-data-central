@@ -20,7 +20,7 @@ final class FoodUpdateLog implements CreatableFromArray
     private ?string $ingredients;
     private ?string $modifiedDate;
     private ?string $publicationDate;
-    private ?int $servingSize;
+    private ?float $servingSize;
     private ?string $servingSizeUnit;
     private ?string $brandedFoodCategory;
     private ?string $changes;
@@ -89,7 +89,7 @@ final class FoodUpdateLog implements CreatableFromArray
         return $this->publicationDate;
     }
 
-    public function getServingSize(): ?int
+    public function getServingSize(): ?float
     {
         return $this->servingSize;
     }
