@@ -8,7 +8,7 @@ use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 
 final class FoodNutrient implements CreatableFromArray
 {
-    private int $id;
+    private ?int $id;
     private ?float $amount;
     private ?int $dataPoints;
     private ?float $min;
@@ -19,12 +19,7 @@ final class FoodNutrient implements CreatableFromArray
     private ?FoodNutrientDerivation $foodNutrientDerivation;
     private ?NutrientAnalysisDetails $nutrientAnalysisDetails;
 
-    private function __construct(int $id)
-    {
-        $this->id = $id;
-    }
-
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -76,12 +71,9 @@ final class FoodNutrient implements CreatableFromArray
 
     public static function createFromArray(array $data): self
     {
-        if (!isset($data['id'])) {
-            throw new \InvalidArgumentException();
-        }
+        $self = new self();
 
-        $self = new self($data['id']);
-
+        $self->id = $data['id'] ?? null;
         $self->amount = $data['amount'] ?? null;
         $self->dataPoints = $data['dataPoints'] ?? null;
         $self->min = $data['min'] ?? null;

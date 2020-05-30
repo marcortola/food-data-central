@@ -17,7 +17,7 @@ final class BrandedFoodItem extends AbstractFoodItem implements CreatableFromArr
     private ?string $ingredients;
     private ?string $modifiedDate;
     private ?string $publicationDate;
-    private ?float $servingSize;
+    private ?int $servingSize;
     private ?string $servingSizeUnit;
     private ?string $brandedFoodCategory;
     /**
@@ -74,7 +74,7 @@ final class BrandedFoodItem extends AbstractFoodItem implements CreatableFromArr
         return $this->publicationDate;
     }
 
-    public function getServingSize(): ?float
+    public function getServingSize(): ?int
     {
         return $this->servingSize;
     }

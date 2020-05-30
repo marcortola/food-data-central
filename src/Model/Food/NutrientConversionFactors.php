@@ -9,14 +9,14 @@ use MarcOrtola\FoodDataCentral\Model\CreatableFromArray;
 final class NutrientConversionFactors implements CreatableFromArray
 {
     private ?string $type;
-    private ?string $value;
+    private ?float $value;
 
     public function getType(): ?string
     {
         return $this->type;
     }
 
-    public function getValue(): ?string
+    public function getValue(): ?float
     {
         return $this->value;
     }
