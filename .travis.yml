@@ -8,6 +8,7 @@ cache:
 
 php:
     - 7.4
+    - 8.0
 
 before_script:
     - travis_retry composer install --no-interaction --prefer-dist

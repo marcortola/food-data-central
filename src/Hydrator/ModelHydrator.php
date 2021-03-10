@@ -34,7 +34,7 @@ final class ModelHydrator implements Hydrator
 
         $callable = [$class, 'createFromArray'];
 
-        if (\is_callable($callable)) {
+        if (\method_exists($class, 'createFromArray')) {
             return \call_user_func($callable, $data);
         }
 

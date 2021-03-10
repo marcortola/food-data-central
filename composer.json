@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": ">=7.4",
         "ext-json": "*",
         "php-http/discovery": "^1.7",
         "psr/http-client": "^1.0",
