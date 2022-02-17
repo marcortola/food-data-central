@@ -47,5 +47,11 @@
             "vendor/bin/phpstan analyse --no-interaction",
             "vendor/bin/phpunit"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true
+        }
     }
 }
